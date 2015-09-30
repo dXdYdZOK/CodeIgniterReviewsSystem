@@ -7,15 +7,15 @@
 <input type='hidden' name='user_id' value='<?=$user_id?>'>
 <input type='hidden' name='sender_id' value='<?=$sender_id?>'>
 
-<h5></h5>
+<h5>Review Status:</h5>
 <select name='status'>
 	<? for($n=-1;$n<=1;$n++): ?>
 		<option value='<?=$n?>'<?=$n==set_value('status')?' selected':''?>><?if($n==-1) echo 'Negative'; elseif($n==0) echo 'Neutral'; else echo 'Positive';?></option>
 	<? endfor; ?>
 </select>
 
-<h5></h5>
-<textarea name='text'><?=set_value('text')?></textarea>
+<h5>Review Text</h5>
+<textarea name='text' style='width:500px;height:200px;'><?=set_value('text')?></textarea>
 
 <div><input type="submit" value="Сохранить"></div>
 

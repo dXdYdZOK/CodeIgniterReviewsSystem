@@ -2,9 +2,10 @@
 	.review.minus {background-color:red;}
 	.review.plus {background-color:green;}
 	.review.neutral {background-color:#c0c0c0;}
+	.review {margin:10px;}
 </style>
 <div>
-	<? var_dump($reviews); ?>
+	<? //var_dump($reviews); ?>
 	<? if(count($reviews)==0): ?>
 		<h2>No Reviews to User <?=$username?></h2>
 	<? else: ?>
